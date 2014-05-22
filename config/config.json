@@ -7,10 +7,6 @@
   "motd": "Message of the day",
   "whoWasLimit": 10000,
   "token": 1,
-  "channels": {
-    "channel1": { "topic": "First Channel" },
-    "channel2": { "topic": "Second Channel" }
-  },
   "giulio": "47a87e10e80556d6e94455462054d89c:579907",
   "pingTimeout": 120,
   "maxNickLength": 30
