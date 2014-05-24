@@ -1,15 +1,5 @@
 var sequelize = require('./lib/sequelize'),
     models = require('./lib/models');
- 
-sequelize
-  .authenticate()
-  .complete(function(err) {
-    if (!!err) {
-      console.log('Unable to connect to the database:', err)
-    } else {
-      console.log('Connection has been established successfully.')
-    }
-  })
 
 var msg = models.Message.build({
   cID: '12',
