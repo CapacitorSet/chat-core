@@ -1,0 +1,2 @@
+drop support for NICK
+remove console.log on PRIVMSGing a channel
