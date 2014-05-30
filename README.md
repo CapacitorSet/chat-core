@@ -1,10 +1,10 @@
-***About***
+*Untitled*
 
-The server will allow clients to connect, join channels, change topics; basic stuff.
+**The server**
 
-Done:
+The server is meant to support two protocols: a lightweight chat protocol - UMP - and IRC, as a fallback. The current version only supports the essential features of IRC, notably:
 
-* PASS (connection password)
+* PASS, NICK, USER
 * PING/PONG
 * PRIVMSG
 * MODE
@@ -13,32 +13,10 @@ Done:
 * NAMES
 * LIST
 * INVITE
-* WHOWAS
 * TIME
 * VERSION
-* AWAY
-* WHO
-* OPER
 * KICK
-* WALLOP
-* CONNECT
-* Connection garbage like MOTD
-* Basic data validation
-* Simple JSON config file
-* Channel modes: o, p, s, t, n, m, i, l, b, v, k
-* User modes: i, w, o
 
-h3. License (GPL)
+**Connecting to the server**
 
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see "http://www.gnu.org/licenses/":http://www.gnu.org/licenses/.
+The server accepts unencrypted connections on port 6667. To connect, simply type `telnet [host] 6667` in a terminal: for example, `telnet 192.168.1.103 6667`.

@@ -1,2 +1,2 @@
 drop support for NICK
-remove console.log on PRIVMSGing a channel
+risolvere la questione di INVITE prima, e di KICK e BAN poi
