@@ -1,13 +1,12 @@
-var winston = require('winston'),
-    sequelize = require('../lib/sequelize'),
-    models = require('../lib/models');
+var sequelize = require('../lib/sequelize'),
+	colog = require('colog');
 
 sequelize
   .sync({ force: true })
   .complete(function(err) {
      if (!!err) {
-       console.log('An error occurred while creating the table:', err)
+       colog.error('An error occurred while creating the table:', err)
      } else {
-       console.log('It worked!')
+       colog.success('Tables set up correctly!')
      }
   })
