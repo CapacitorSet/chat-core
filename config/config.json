@@ -1,9 +1,5 @@
-{ "network":  "ircn",
-  "hostname": "localhost",
-  "serverDescription": "A Node IRC daemon",
-  "port": 6667,
-  "linkPort": 7777,
-  "token": 1,
-  "pingTimeout": 10,
-  "maxNickLength": 30
+{
+	"hostname": "localhost",
+	"port": 6667,
+	"pingTimeout": 10
 }
