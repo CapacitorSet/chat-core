@@ -1,5 +1,5 @@
 {
 	"hostname": "localhost",
 	"port": 6667,
-	"pingTimeout": 10
+	"pingTimeout": 60
 }
