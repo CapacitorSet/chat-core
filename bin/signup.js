@@ -5,7 +5,7 @@ var http = require('http'),
 
 	pubkey    = '6LddovQSAAAAAKBR27JXnpZJYXMLJI7JsHzm0p1V',
 	privkey   = '6LddovQSAAAAAGU9JLWXFsmAGMEsPmgNUsSkP-bR',
-	addr      = '192.168.1.103',
+	addr      = '192.168.1.141',
 	port      = 7761, // 0x77 0x61 = "wa" :3
 	server = http.createServer(function (req, res) {
 		if (req.method === 'GET') {
