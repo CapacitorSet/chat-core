@@ -1,5 +1,20 @@
 {
 	"hostname": "localhost",
 	"port": 6667,
-	"pingTimeout": 60
+	"pingTimeout": 60,
+	"signup": {
+		"recaptchaPubkey": "6LddovQSAAAAAKBR27JXnpZJYXMLJI7JsHzm0p1V",
+		"recaptchaPrivkey": "6LddovQSAAAAAGU9JLWXFsmAGMEsPmgNUsSkP-bR",
+		"address": "127.0.0.1",
+		"port": 7761,
+		"_comment": "0x77 0x61 = 'wa' :3"
+	},
+	"database": {
+		"database": "Messaging",
+		"user": "root",
+		"password": "",
+		"address": "127.0.0.1",
+		"port": 3306,
+		"dialect": "mysql"
+	}
 }

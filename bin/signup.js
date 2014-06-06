@@ -2,11 +2,11 @@ var http = require('http'),
 	sequelize = require('../lib/sequelize'),
 	md5 = require('../lib/md5')
 	qs = require('querystring'),
-
-	pubkey    = '6LddovQSAAAAAKBR27JXnpZJYXMLJI7JsHzm0p1V',
-	privkey   = '6LddovQSAAAAAGU9JLWXFsmAGMEsPmgNUsSkP-bR',
-	addr      = '192.168.1.141',
-	port      = 7761, // 0x77 0x61 = "wa" :3
+	config = JSON.parse(require('fs').readFileSync('config/config.json').toString()),
+	pubkey    = config.signup.recaptchaPubkey,
+	privkey   = config.signup.recaptchaPrivkey,
+	addr      = config.signup.address,
+	port      = config.signup.port,
 	server = http.createServer(function (req, res) {
 		if (req.method === 'GET') {
 			res.writeHead(200, {'Content-Type': 'text/html'});
